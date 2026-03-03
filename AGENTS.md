@@ -48,6 +48,7 @@ All coding standards are organized into separate markdown files in the `/docs` d
 2. **Follow TypeScript Strictness**: All code must compile with `strict: true` and pass type checking.
 3. **Run ESLint**: Execute `npm run lint` before committing and fix all warnings.
 4. **Test Your Changes**: Ensure code changes don't break existing functionality.
+5. **⚠️ NEVER Use middleware.ts**: This project uses Next.js 16.1.6 where `middleware.ts` is deprecated. ALWAYS use `proxy.ts` instead for middleware functionality.
 
 
 ## Key Principles
